@@ -20,19 +20,19 @@
     
     var electricity = document.getElementById("Electricity").value;
 
-    if(isNaN(Number)) || age < 0 ){
-        alert("Please enter a valid age");
+    if(isNaN(electricity) || electricity < 0 ){
+        alert("Please input a valid consumption");
     }
 
-    else if (Number < 18){
-        alert("You are underage.")
+    else if  (electricity < 201){
+        alert("You consumption is typical.")
     }
-    else if (Number > 18){
-        alert("You are of legal age.")
+    else if (electricity > 500){
+        alert("You are consuming too much electricity.")
     }
 
     else {
-        alert("Your age could not be classified.");
+        alert("Your consumption could not be classified.");
     }
 
 }
