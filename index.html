@@ -24,15 +24,19 @@
         alert("Please input a valid consumption");
     }
 
-    else if  (electricity < 201){
-        alert("You consumption is typical.")
-    }
-    else if (electricity > 500){
-        alert("You are consuming too much electricity.")
+    if (electricity > 100){
+        alert("Discounted electricity consumption");
     }
 
-    else {
-        alert("Your consumption could not be classified.");
+    else if  (electricity < 99){
+        alert("Normal residential consumption.")
+    }
+    else if (electricity > 200){
+        alert("Typical residential consumption.")
+    }
+
+    else if (electricity > 500){}
+        alert("Higher residential consumption.");
     }
 
 }
